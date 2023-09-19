@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Grade Page</title>
+  </head>
+  <body>
+    <table border="0" style="width: 100%">
+      <tr>
+        <td valign="top">
+          <ul>
+            <li><a href="profile/index.html">Account</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Groups</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Inbox</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Studio</a></li>
+            <li><a href="#">Commons</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </td>
+
+        <td valign="top">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Modules</a></li>
+            <li><a href="#">Piazza</a></li>
+            <li><a href="#">Zoom Meetings</a></li>
+            <li><a href="assignments/index.html">Assignments</a></li>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Panopto Video</a></li>
+            <li><a href="#">Discussions</a></li>
+            <li><a href="#">Announcements</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Files</a></li>
+            <li><a href="#">Rubrics</a></li>
+            <li><a href="#">Outcomes</a></li>
+            <li><a href="#">Collaborations</a></li>
+            <li><a href="#">Syllabus</a></li>
+            <li><a href="settings/intex.html">Settings</a></li>
+          </ul>
+        </td>
+
+        <td valign="top">
+          <br />
+          <select id="select-one-genre">
+            <option selected value="publish_all">Gradebook</option>
+            <option value="optinon_1">Optinon 1</option>
+            <option value="optinon_2">Option 2</option>
+            <option value="optinon_3">Option 3</option>
+          </select>
+
+          <button type="button">Import</button>
+
+          <select id="select-one-genre">
+            <option selected value="publish_all">Export</option>
+            <option value="optinon_1">Optinon 1</option>
+            <option value="optinon_2">Option 2</option>
+            <option value="optinon_3">Option 3</option>
+          </select>
+
+          <button type="button">Configure</button>
+
+          <h3>Student Names</h3>
+          <input
+            id="text-fields-username"
+            placeholder="Search Students"
+          /><br />
+          <h3>Assignment Names</h3>
+          <input
+            id="text-fields-username"
+            placeholder="Search Assignment"
+          /><br />
+          <br />
+          <button type="button">Apply Filters</button>
+          <br />
+          <br />
+
+          <table border="1">
+            <tr>
+              <th>Student Name Out of 100</th>
+              <th>A1 SETUP Out of 100</th>
+              <th>A2 HTML Out of 100</th>
+              <th>A3 CSS Out of 100</th>
+              <th>A4 JAVA Out of 100</th>
+              <th>A5 JAVASCRIPT Out of 100</th>
+            </tr>
+            <tr>
+              <td>Deep</td>
+              <td>
+                <input
+                  type="number"
+                  id="grades"
+                  placeholder="Enter Grades "
+                  value="98"
+                  min="0"
+                  max="100"
+                />
+              </td>
+              <td>87</td>
+              <td>91</td>
+              <td>88</td>
+              <td>95</td>
+            </tr>
+            <tr>
+              <td>Keyur</td>
+              <td>78</td>
+              <td>99</td>
+              <td>87</td>
+              <td>99</td>
+              <td>
+                <input
+                  type="number"
+                  id="grades"
+                  placeholder="Enter Grades "
+                  value="94"
+                  min="0"
+                  max="100"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Yug</td>
+              <td>77</td>
+              <td>88</td>
+              <td>99</td>
+              <td>85</td>
+              <td>97</td>
+            </tr>
+            <tr>
+              <td>Mayur</td>
+              <td>88</td>
+              <td>77</td>
+              <td>99</td>
+              <td>88</td>
+              <td>79</td>
+            </tr>
+            <tr>
+              <td>Darshan</td>
+              <td>55</td>
+              <td>
+                <input
+                  type="number"
+                  id="grades"
+                  placeholder="Enter Grades "
+                  value="96"
+                  min="0"
+                  max="100"
+                />
+              </td>
+              <td>77</td>
+              <td>88</td>
+              <td>99</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
