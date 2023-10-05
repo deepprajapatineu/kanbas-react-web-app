@@ -7,6 +7,10 @@
   .custom-bar {
     display: none;
   }
+
+  .custom-card{
+    text-decoration: none; /* Remove underline or other text decorations */
+  }
   
   @media (max-width: 576px) {
     .custom-bar {
