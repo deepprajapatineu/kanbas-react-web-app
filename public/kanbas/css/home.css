@@ -35,6 +35,39 @@
   border-radius: 0px;
 }
 
+.studentview-hidden{
+  display: none;
+}
+
+.sub-nav{
+  display: none;
+}
+
+.temp{
+  background-color: transparent;
+}
+
+@media (max-width: 990px) {
+  .studentview-hidden{
+    display:block;
+  }
+
+  .studentView-main{
+    display: none;
+  }
+
+  .sub-nav{
+    display: block;
+  }
+
+  .temp{
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%; 
+  }
+}
+
 /* --------- Navbar styling start ----------------- */
 
 /* Custom CSS to style selected (active) links */

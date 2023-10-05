@@ -45,8 +45,25 @@ body * {
   pointer-events: none; /* Prevent interactions with the element */
 }
 
+.sub-nav{
+  display: none;
+}
+
+/* .studentview-hidden{
+  display: none;
+} */
+
 
 @media (max-width: 990px) {
+  .margin-barr{
+    margin-left: 70px;
+  }
+  .margin-barr-profile{
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 766px) {
   .margin-barr{
     margin-left: 10px;
   }
@@ -55,5 +72,8 @@ body * {
   }
   .disabled-li {
     pointer-events:all;
+  }
+  .sub-nav{
+    display: block;
   }
 }

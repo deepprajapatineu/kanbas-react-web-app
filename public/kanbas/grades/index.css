@@ -1,0 +1,28 @@
+.sub-nav{
+    display: none;
+  }
+  
+  .temp{
+    background-color: transparent;
+  }
+  
+  @media (max-width: 990px) {
+    .studentview-hidden{
+      display:block;
+    }
+  
+    .studentView-main{
+      display: none;
+    }
+  
+    .sub-nav{
+      display: block;
+    }
+  
+    .temp{
+      white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; 
+    }
+  }
