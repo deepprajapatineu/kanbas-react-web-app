@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dashboard</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        <link href="../css/style.css" rel="stylesheet" />
+        <link href="../css/index.css" rel="stylesheet" />
+        <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+        <link href="../css/courseNavigation/index.css" rel="stylesheet" />
+        <link href="../../vendors/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="./index.css" rel="stylesheet" />
+      </head>
+  <body>
+    <style>
+      html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+      }
+  </style>
+    <div class="container pe-0 ps-0 ms-0" style="height: 100%">
+      <div class="row" style="height: 100%">
+        <div
+          class="col-1 wd-bg-black pe-0 d-none d-sm-block"
+          style="width: 85px; height: 100% ; position: fixed;"
+        >
+          <ul class="sidebar">
+            <li class="pt-0">
+              <a href="../home.html">
+                <img
+                  src="../../images/Northeastern.png"
+                  alt="Neu Logo"
+                  class="img-thumbnail ps-0 pe-0"
+                  style="
+                    background-color: black;
+                    border: none;
+                    /* height: 60px;
+                    width: 70px; */
+                  "
+              /></a>
+            </li>
+            <li>
+              <a href="../profile/index.html">
+                <i class="fa-solid fa-circle-user account_icon"></i><br />
+                Account</a
+              >
+            </li>
+            <li class="active">
+              <a href="./index.html">
+                <i class="fas fa-gauge" style="color: red"></i><br />
+                Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="../home.html">
+                <i class="fa-solid fa-book" style="color: red"></i><br />
+                Courses</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-calendar-days" style="color: red"></i
+                ><br />
+                Calendar</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-calendar-days" style="color: red"></i
+                ><br />
+                Inbox</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-clock-rotate-left" style="color: red"></i
+                ><br />
+                History</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-photo-film" style="color: red"></i
+                ><br />
+                Studio</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-creative-commons" style="color: red"></i
+                ><br />
+                Commons</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-question" style="color: red"></i
+                ><br />
+                Help</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col margin-barr">
+          <div class="row fs-3 mt-2 ms-1 pl-0 ps-0 pb-0" >
+            <nav
+              style="--bs-breadcrumb-divider: '>'; padding-left: 25px"
+              aria-label="breadcrumb"
+            >
+              <ol class="breadcrumb mb-0 " style=" background-color: transparent; ">
+                <li class="me-4 custom-bar">
+                    <a href="responsiveNavigation/simpleKanabas.html">
+                      <i class="fa-solid fa-bars" style="color: #000000"></i
+                    ></a>
+                  </li>
+                <li class="breadcrumb-item">
+                  <a class="text-decoration-none text-muted" href="#"
+                    >Dashboard</a
+                  >
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <hr style="width: 98%" />
+          <div class="d-flex flex-row flex-wrap ms-4">
+            <div class="col-12 fs-4">
+              <span>Published Courses (8)</span>
+            </div>
+            <hr class="w-100" />
+            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+              <div class="card text-dark w-75">
+                <div class="card-header bg-primary" style="height: 100px; position: relative;">
+                    <i class="fa-solid fa-caret-down text-white" style="position: absolute; top: 5px; right: 10px;"></i>
+                  </div>
+                  
+                <div class="card-body">
+                  <h6 class="card-title bg-white text-truncate text-primary">CS5610 11550 Web Development</h6>
+                  <h5 class="bg-white text-truncate text-secondary">CS5650.11550.202410</h5>
+                  <p class="text-truncate"  style="font-size: 12px; color: gray;">
+                    202410_1 Fall 2023 Semester Full Term
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-up-right-from-square" style="color: gray"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div
+              class="d-flex flex-row flex-wrap col-xl-3 col-lg-4 col-md-6 col-s-12"
+            >
+              <div class="card text-dark w-75">
+                <div class="card-header bg-primary" style="height: 100px; position: relative;">
+                    <i class="fa-solid fa-caret-down text-white" style="position: absolute; top: 5px; right: 10px;"></i>
+                  </div>
+                <div class="card-body">
+                  <h6 class="card-title bg-white text-truncate text-primary">CS5610 11550 Web Development</h6>
+                  <h5 class="bg-white text-truncate text-secondary">CS5650.11550.202410</h5>
+                  <p class="text-truncate"  style="font-size: 12px; color: gray;">
+                    202410_1 Fall 2023 Semester Full Term
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-up-right-from-square" style="color: gray"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-s-12">
+              <div class="card text-dark w-75">
+                <div class="card-header bg-primary" style="height: 100px; position: relative;">
+                    <i class="fa-solid fa-caret-down text-white" style="position: absolute; top: 5px; right: 10px;"></i>
+                  </div>
+                <div class="card-body">
+                  <h6 class="card-title bg-white text-truncate text-primary">CS5610 11550 Web Development</h6>
+                  <h5 class="bg-white text-truncate text-secondary">CS5650.11550.202410</h5>
+                  <p class="text-truncate"  style="font-size: 12px; color: gray;">
+                    202410_1 Fall 2023 Semester Full Term
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-up-right-from-square" style="color: gray"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-s-12">
+              <div class="card text-dark w-75">
+                <div class="card-header bg-primary" style="height: 100px; position: relative;">
+                    <i class="fa-solid fa-caret-down text-white" style="position: absolute; top: 5px; right: 10px;"></i>
+                  </div>
+                <div class="card-body">
+                  <h6 class="card-title bg-white text-truncate text-primary">CS5610 11550 Web Development</h6>
+                  <h5 class="bg-white text-truncate text-secondary">CS5650.11550.202410</h5>
+                  <p class="text-truncate"  style="font-size: 12px; color: gray;">
+                    202410_1 Fall 2023 Semester Full Term
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-up-right-from-square" style="color: gray"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-s-12">
+              <div class="card text-dark w-75">
+                <div class="card-header bg-primary" style="height: 100px; position: relative;">
+                    <i class="fa-solid fa-caret-down text-white" style="position: absolute; top: 5px; right: 10px;"></i>
+                  </div>
+                <div class="card-body">
+                  <h6 class="card-title bg-white text-truncate text-primary">CS5610 11550 Web Development</h6>
+                  <h5 class="bg-white text-truncate text-secondary">CS5650.11550.202410</h5>
+                  <p class="text-truncate"  style="font-size: 12px; color: gray;">
+                    202410_1 Fall 2023 Semester Full Term
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-up-right-from-square" style="color: gray"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-s-12">
+              <div class="card text-dark w-75">
+                <div class="card-header bg-primary" style="height: 100px; position: relative;">
+                    <i class="fa-solid fa-caret-down text-white" style="position: absolute; top: 5px; right: 10px;"></i>
+                  </div>
+                <div class="card-body">
+                  <h6 class="card-title bg-white text-truncate text-primary">CS5610 11550 Web Development</h6>
+                  <h5 class="bg-white text-truncate text-secondary">CS5650.11550.202410</h5>
+                  <p class="text-truncate"  style="font-size: 12px; color: gray;">
+                    202410_1 Fall 2023 Semester Full Term
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-up-right-from-square" style="color: gray"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 7 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-s-12">
+              <div class="card text-dark w-75">
+                <div class="card-header bg-primary" style="height: 100px; position: relative;">
+                    <i class="fa-solid fa-caret-down text-white" style="position: absolute; top: 5px; right: 10px;"></i>
+                  </div>
+                <div class="card-body">
+                  <h6 class="card-title bg-white text-truncate text-primary">CS5610 11550 Web Development</h6>
+                  <h5 class="bg-white text-truncate text-secondary">CS5650.11550.202410</h5>
+                  <p class="text-truncate"  style="font-size: 12px; color: gray;">
+                    202410_1 Fall 2023 Semester Full Term
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-up-right-from-square" style="color: gray"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 8 -->
+            <div class="col-xl-3 col-lg-4 col-md-6 col-s-12">
+              <div class="card text-dark w-75">
+                <div class="card-header bg-primary" style="height: 100px; position: relative;">
+                    <i class="fa-solid fa-caret-down text-white" style="position: absolute; top: 5px; right: 10px;"></i>
+                  </div>
+                <div class="card-body">
+                  <h6 class="card-title bg-white text-truncate text-primary">CS5610 11550 Web Development</h6>
+                  <h5 class="bg-white text-truncate text-secondary">CS5650.11550.202410</h5>
+                  <p class="text-truncate"  style="font-size: 12px; color: gray;">
+                    202410_1 Fall 2023 Semester Full Term
+                  </p>
+                  <a href="#">
+                    <i class="fa-solid fa-up-right-from-square" style="color: gray"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

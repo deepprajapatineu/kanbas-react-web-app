@@ -2,197 +2,454 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Assignments Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="../css/courseNavigation/index.css" rel="stylesheet" />
+    <link href="../../vendors/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/home.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
   </head>
   <body>
-    <table border="0" style="width: 100%">
-      <tr>
-        <td valign="top">
-          <ul>
-            <li><a href="../profile/index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Groups</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </td>
+    <div class="container pe-0 ps-0 ms-0">
+      <div class="row">
+            <div
+              class="col-1 wd-bg-black pe-0 d-none d-lg-block"
+              style="width: 85px;  height: 100vh; position: fixed;"
+            >
+              <ul class="sidebar">
+                <li class="pt-0">
+                  <a href="profile/index.html">
+                    <img
+                      src="../../images/Northeastern.png"
+                      alt="Neu Logo"
+                      class="img-thumbnail ps-0 pe-0"
+                      style="
+                        background-color: black;
+                        border: none;
+                        /* height: 60px;
+                        width: 70px; */
+                      "
+                  /></a>
+                </li>
+                <li>
+                  <a href="../profile/index.html">
+                    <i class="fa-solid fa-circle-user account_icon"></i>
+                    <span>Account</span></a
+                  >
+                </li>
+                <li>
+                  <a href="../dashboard/index.html">
+                    <i class="fas fa-gauge" style="color: red"></i>
 
-        <td valign="top">
-          <ul>
-            <li><a href="../home.html">Home</a></li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Piazza</a></li>
-            <li><a href="#">Zoom Meetings</a></li>
-            <li><a href="../assignments.html">Assignments</a></li>
-            <li><a href="#">Quizzes</a></li>
-            <li><a href="../grades.html">Grades</a></li>
-            <li><a href="#">People</a></li>
-            <li><a href="#">Panopto Video</a></li>
-            <li><a href="#">Discussions</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Files</a></li>
-            <li><a href="#">Rubrics</a></li>
-            <li><a href="#">Outcomes</a></li>
-            <li><a href="#">Collaborations</a></li>
-            <li><a href="#">Syllabus</a></li>
-            <li><a href="../settings/intex.html">Settings</a></li>
-          </ul>
-        </td>
+                    Dashboard</a
+                  >
+                </li>
+                <li class="active">
+                  <a href="../home.html">
+                    <i class="fa-solid fa-book" style="color: red"></i>
+                    Courses</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-calendar-days" style="color: red"></i
+                    ><br />
+                    Calendar</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-inbox" style="color: red"></i
+                    ><br />
+                    Inbox</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-clock-rotate-left" style="color: red"></i
+                    ><br />
+                    History</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-photo-film" style="color: red"></i
+                    ><br />
+                    Studio</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-creative-commons" style="color: red"></i>
+                    Commons</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa-solid fa-question" style="color: red"></i
+                    ><br />
+                    Help</a
+                  >
+                </li>
+              </ul>
+            </div>
+        <div class="col margin-barr">
+          <div class="row fs-4 mt-2 ps-0 pb-0">
+            <div class="col-10">
+              <nav
+                style="--bs-breadcrumb-divider: '>'; padding-left: 25px"
+                aria-label="breadcrumb"
+              >
+                <ol
+                  class="breadcrumb mb-0"
+                  style="background-color: transparent"
+                >
+                  <li class="me-4 disabled-li">
+                    <a href="responsiveNavigation/simpleKanabas.html">
+                      <i class="fa-solid fa-bars" style="color: #000000"></i
+                    ></a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a class="text-decoration-none text-danger" href="#"
+                      >CS5610 Web Development</a></a>
+                  </li>
+                  <li class=" active" aria-current="page"> &nbsp;
+                    <i class="fa-light fa-greater-than" style="color: #838486;"></i> &nbsp;Assignments
+                  </li>
+                </ol>
+              </nav>
+            </div>
+            <div class="col-2">
+              <a
+                href="./onlyCourseNavigation.html"
+                class="text-decoration-none"
+              >
+                <button class="btn btn-light me-1 float-end border">
+                  <i class="fa-solid fa-glasses" style="color: black"></i>
+                  Student View
+                </button>
+              </a>
+            </div>
+          </div>
+          <hr style="margin-left: 15px" />
+          <div class="row">
+            <div
+              class="col-2 d-none d-lg-block text-wrap me-2"
+              style="padding-left: 25px"
+            >
+              <ul class="wd-course-navigation">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="#">Module</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li class="active">
+                  <a href="./index.html">Assignments</a>
+                </li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="../grades/index.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Panopto Video</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li class="text-wrap"><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Rubrics</a></li>
+                <li><a href="#">Outcomes</a></li>
+                <li><a href="#">Collaborations</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="../settings/index.html">Settings</a></li>
+              </ul>
+            </div>
+            <!--  -->
+            <div class="col " >
+              <div class="row pt-3 pb-1 ms-0 ps-0 mx-0">
+                <div class="col" style="margin-left: -23px" >
+                  <input
+                    type="text"
+                    placeholder="Search For Assignments"
+                    class="form-control w-50 ms-0"
+                  />
+                </div>
+                <div class="col">
+                  <a class="btn btn-light me-1 border float-end ms-1">
+                    <i class="fa-solid fa-ellipsis-vertical ms-1"></i>
+                  </a>
+                  <button type="button" class="btn btn-danger float-end ms-1">
+                    <i class="fa-solid fa-plus"></i>
+                    Assignment
+                  </button>
+                  <button type="button" class="float-end btn btn-light me-1 border">
+                    <i class="fa-solid fa-plus" style="color: black"></i>
+                    Group
+                  </button>
+                </div>
+              </div>
+              <hr class="hr-grow"/>
+              <div class="row mt-5">
+                <ul class="list-group no-border-radius">
+                  <li class="list-group-item list-group-item-secondary no-border-radius">
+                    <div class="flex-row">
+                      <i class="fa-solid fa-caret-down"></i> &nbsp;
+                      ASSIGNMENTS
+                      <i
+                        class="fa-solid fa-ellipsis-vertical float-end pt-1"
+                        style="color: #050505"
+                      ></i>
+                      <i
+                        class="fa-solid fa-plus float-end me-3 pt-1"
+                        style="color: #85897e"
+                      ></i>
+                     
+                      <label
+                          class="border border-dark rounded-pill float-end "
+                          style="padding: 5px 10px; margin: 0px 10px; font-size: 10px;"
+                        >
+                          40% of Total
+                        </label>
+                      
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list-group border-start border-3 border-success no-border-radius">
+                  <li class="list-group-item no-border-radius">
 
-        <td valign="top">
-          <br />
-          <input
-            type="text"
-            id="assignment-search"
-            placeholder="Search for Assignments"
-          />
+                    <a href="./edit.html" class="fs-5" style="text-decoration: none; color: #000000;">
+                    <h5 style="margin: 0; ">A1 - ENV + HTML</h5>
+                    </a>
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Week 1 HTML - Week Starting on Monday September 5th (9/5/2022) Module | <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="color: #050505; font-size: 16px;"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-check float-end me-3 text-success"
+                      style="font-size: 16px"
+                    ></i></p>
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Due Sep 18th 2022 at 11.59pm | 100 pts</p>
+                   
+                   
 
-          <button type="button">Group</button>
-          <button type="button">Assignment</button>
 
-          <select id="select-one-genre">
-            <option selected value="publish_all">Edit Assignment Dates</option>
-            <option value="optinon_1">Optinon 1</option>
-            <option value="optinon_2">Option 2</option>
-            <option value="optinon_3">Option 3</option>
-          </select>
-          <hr />
+                  </li>
+                  
+                  <li class="list-group-item no-border-radius">
+                   
+                    <a href="./edit.html" class="fs-5" style="text-decoration: none; color: #000000;">
+                    <h5 style="margin: 0; ">A2 - CSS + BOOTSTRAP</h5></a>
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Week 1 HTML - Week Starting on Monday September 5th (9/5/2022) Module | <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="color: #050505; font-size: 16px;"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-check float-end me-3 text-success"
+                      style="font-size: 16px"
+                    ></i></p>
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Due Sep 18th 2022 at 11.59pm | 100 pts</p>
+                   
 
-          <h3>
-            ASSIGNMENTS 40% of Total
-            <select id="select-one-genre">
-              <option selected value="publish_all">Edit</option>
-              <option value="optinon_1">Speed Grader</option>
-              <option value="optinon_2">Duplicate</option>
-              <option value="optinon_3">Delete</option>
-              <option value="optinon_3">Move To...</option>
-              <option value="optinon_3">Send To...</option>
-              <option value="optinon_3">Copy To...</option>
-              <option value="optinon_3">Share to Commons</option>
-            </select>
-          </h3>
+                  </li>
+                  <li class="list-group-item no-border-radius">
+                    
+                    <a href="./edit.html" class="fs-5" style="text-decoration: none; color: #000000;">
+                    <h5 style="margin: 0; ">A3 - JS + REACT</h5></a>
 
-          <ul>
-            <li>
-              <a href="edit.html">A1 - ENV + HTML</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li>
-              <a href="edit.html">A2 - CSS + BOOTSTRAP</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li>
-              <a href="edit.html">A3 - JS + REACT</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li>
-              <a href="edit.html">A4 - STATE + REDUX</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li>
-              <a href="edit.html">A5 - NODE + SESSION</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li>
-              <a href="edit.html">A6 - MONGO + MONGOOSE</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-          </ul>
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Week 1 HTML - Week Starting on Monday September 5th (9/5/2022) Module | <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="color: #050505; font-size: 16px;"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-check float-end me-3 text-success"
+                      style="font-size: 16px"
+                    ></i></p>
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Due Sep 18th 2022 at 11.59pm | 100 pts</p>
+                   
 
-          <h3>
-            QUIZZES 10% of Total
-            <select id="select-one-genre">
-              <option selected value="publish_all">Edit</option>
-              <option value="optinon_1">Speed Grader</option>
-              <option value="optinon_2">Duplicate</option>
-              <option value="optinon_3">Delete</option>
-              <option value="optinon_3">Move To...</option>
-              <option value="optinon_3">Send To...</option>
-              <option value="optinon_3">Copy To...</option>
-              <option value="optinon_3">Share to Commons</option>
-            </select>
-          </h3>
+                  </li>
 
-          <ul>
-            <li>
-              <a href="edit.html">Q1 - HTML</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li>
-              <a href="edit.html">Q2 - CSS</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li>
-              <a href="edit.html">Q3 - JS, ES6</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li>
-              <a href="edit.html">Q4 - NODE</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li>
-              <a href="edit.html">Q5 - MONGO</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li>
-              <a href="edit.html">A6 - MONGO + MONGOOSE</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-          </ul>
+                  <li class="list-group-item no-border-radius">
+                    
+                    <a href="./edit.html" class="fs-5" style="text-decoration: none; color: #000000;">
+                    <h5 style="margin: 0; ">A4 - STATE + REDUX</h5></a>
 
-          <h3>
-            EXAMS 20% of Total
-            <select id="select-one-genre">
-              <option selected value="publish_all">Edit</option>
-              <option value="optinon_1">Speed Grader</option>
-              <option value="optinon_2">Duplicate</option>
-              <option value="optinon_3">Delete</option>
-              <option value="optinon_3">Move To...</option>
-              <option value="optinon_3">Send To...</option>
-              <option value="optinon_3">Copy To...</option>
-              <option value="optinon_3">Share to Commons</option>
-            </select>
-          </h3>
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Week 1 HTML - Week Starting on Monday September 5th (9/5/2022) Module | <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="color: #050505; font-size: 16px;"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-check float-end me-3 text-success"
+                      style="font-size: 16px"
+                    ></i></p>
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Due Sep 18th 2022 at 11.59pm | 100 pts</p>
+                   
+                    
+                  </li>
 
-          <ul>
-            <li>
-              <a href="edit.html">Midterm</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-            <li>
-              <a href="edit.html">Final</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-          </ul>
+                  <li class="list-group-item no-border-radius">
+                    
+                    <a href="./edit.html" class="fs-5" style="text-decoration: none; color: #000000;">
+                    <h5 style="margin: 0; ">A5 - NODE + SESSION</h5></a>
 
-          <h3>
-            PROJECT 30% of Total
-            <select id="select-one-genre">
-              <option selected value="publish_all">Edit</option>
-              <option value="optinon_1">Speed Grader</option>
-              <option value="optinon_2">Duplicate</option>
-              <option value="optinon_3">Delete</option>
-              <option value="optinon_3">Move To...</option>
-              <option value="optinon_3">Send To...</option>
-              <option value="optinon_3">Copy To...</option>
-              <option value="optinon_3">Share to Commons</option>
-            </select>
-          </h3>
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Week 1 HTML - Week Starting on Monday September 5th (9/5/2022) Module | <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="color: #050505; font-size: 16px;"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-check float-end me-3 text-success"
+                      style="font-size: 16px"
+                    ></i></p>
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Due Sep 18th 2022 at 11.59pm | 100 pts</p>
+                   
+                    
+                  </li>
 
-          <ul>
-            <li>
-              <a href="edit.html">Project</a><br />
-              <a href="#">Multiple Modules</a> | Not available yet
-            </li>
-          </ul>
-        </td>
-      </tr>
-    </table>
+                  <li class="list-group-item no-border-radius">
+                    
+                    <a href="./edit.html" class="fs-5" style="text-decoration: none; color: #000000;">
+                    <h5 style="margin: 0; ">A1 - ENV + HTML</h5></a>
+
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Week 1 HTML - Week Starting on Monday September 5th (9/5/2022) Module | <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="color: #050505; font-size: 16px;"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-check float-end me-3 text-success"
+                      style="font-size: 16px"
+                    ></i></p>
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Due Sep 18th 2022 at 11.59pm | 100 pts</p>
+                                       
+                  </li>
+
+                  <li class="list-group-item no-border-radius">
+                    
+                    <a href="./edit.html" class="fs-5" style="text-decoration: none; color: #000000;">
+                    <h5 style="margin: 0; ">A6 - MONGO + MONGOOSE</h5></a>
+
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Week 1 HTML - Week Starting on Monday September 5th (9/5/2022) Module | <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="color: #050505; font-size: 16px;"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-check float-end me-3 text-success"
+                      style="font-size: 16px"
+                    ></i></p>
+                    <p style="margin: 0; font-size: 13px; color: #8c8c8c;">Due Sep 18th 2022 at 11.59pm | 100 pts</p>
+                                       
+                  </li>
+
+                </ul>
+                <ul class="list-group mt-5 no-border-radius">
+                  <li class="list-group-item list-group-item-secondary">
+                    <div class="flex-row ">
+                      <i class="fa-solid fa-caret-down"></i> &nbsp;
+                      QUIZZES
+                      <i
+                        class="fa-solid fa-ellipsis-vertical float-end pt-1"
+                        style="color: #050505"
+                      ></i>
+                      <i
+                        class="fa-solid fa-plus float-end me-3 pt-1"
+                        style="color: #85897e"
+                      ></i>
+                      <label
+                          class="border border-dark rounded-pill float-end "
+                          style="padding: 5px 10px; margin: 0px 10px; font-size: 10px;"
+                        >
+                          60% of Total
+                        </label>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list-group border-start border-3 border-success no-border-radius">
+
+                  <li class="list-group-item no-border-radius">                
+                    <h5 style="margin: 0; "><a href="./edit.html" class="fs-5" style="text-decoration: none; color: #000000;"></a>Q1 - HTML</a>
+                    <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="color: #050505; font-size: 16px"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-check float-end me-3 text-success"
+                      style="font-size: 16px"
+                    ></i>
+                  </h5>
+                  </li>
+
+                  <li class="list-group-item no-border-radius">                
+                    <h5 style="margin: 0; "><a href="./edit.html" class="fs-5" style="text-decoration: none; color: #000000;"></a>Q2 - CSS</a>
+                    <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="color: #050505; font-size: 16px"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-check float-end me-3 text-success"
+                      style="font-size: 16px"
+                    ></i>
+                  </h5>
+                  </li>
+
+                  <li class="list-group-item no-border-radius">                
+                    <h5 style="margin: 0; "><a href="./edit.html" class="fs-5" style="text-decoration: none; color: #000000;"></a>Q3 - JS, ES6</a>
+                    <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="color: #050505; font-size: 16px"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-check float-end me-3 text-success"
+                      style="font-size: 16px"
+                    ></i>
+                  </h5>
+                  </li>
+
+                  <li class="list-group-item no-border-radius">                
+                    <h5 style="margin: 0; "><a href="./edit.html" class="fs-5" style="text-decoration: none; color: #000000;"></a>Q4 - NODE</a>
+                    <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="color: #050505; font-size: 16px"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-check float-end me-3 text-success"
+                      style="font-size: 16px"
+                    ></i>
+                  </h5>
+                  </li>
+
+                  <li class="list-group-item no-border-radius">                
+                    <h5 style="margin: 0; "><a href="./edit.html" class="fs-5" style="text-decoration: none; color: #000000;"></a>Q5 - MONGO</a>
+                    <i
+                      class="fa-solid fa-ellipsis-vertical float-end"
+                      style="color: #050505; font-size: 16px"
+                    ></i>
+                    <i
+                      class="fa-solid fa-circle-check float-end me-3 text-success"
+                      style="font-size: 16px"
+                    ></i>
+                  </h5>
+                  </li>
+
+                  
+                </ul>
+              </div>
+              <br>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -2,115 +2,279 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Profile Edit Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Edit</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
+    <link href="../css/courseNavigation/index.css" rel="stylesheet" />
+    <link href="../../vendors/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="./profile.css" rel="stylesheet" />
   </head>
   <body>
-    <table border="0" width="100%">
-      <tr>
-        <td valign="top">
-          <ul>
-            <li><a href="index.html">Account</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="../home.html">Courses</a></li>
-            <li><a href="#">Groups</a></li>
-            <li><a href="#">Calendar</a></li>
-            <li><a href="#">Inbox</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Studio</a></li>
-            <li><a href="#">Commons</a></li>
-            <li><a href="#">Help</a></li>
+    <style>
+      html, body {
+        width: 100%;
+          margin: 0;
+          padding: 0;
+      }
+  </style>
+    <div class="container pe-0 ps-0 ms-0">
+      <div class="row">
+        <div
+          class="col-1 wd-bg-black pe-0 d-none d-lg-block"
+          style="width: 85px;  height: 100vh; position: fixed;"
+          
+        >
+          <ul class="sidebar" >
+            <li class="pt-0">
+              <a href="profile/index.html">
+                <img
+                  src="../../images/Northeastern.png"
+                  alt="Neu Logo"
+                  class="img-thumbnail ps-0 pe-0"
+                  style="
+                    background-color: black;
+                    border: none;
+                  "
+              /></a>
+            </li>
+            <li class="active">
+              <a href="./edit.html">
+                <i class="fa-solid fa-circle-user account_icon"></i>
+                <span>Account</span></a
+              >
+            </li>
+            <li>
+              <a href="../dashboard/index.html">
+                <i class="fas fa-gauge" style="color: red"></i>
+
+                Dashboard</a
+              >
+            </li>
+            <li>
+              <a href="../home.html">
+                <i class="fa-solid fa-book" style="color: red"></i>
+                Courses</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-calendar-days" style="color: red"></i
+                ><br />
+                Calendar</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-inbox" style="color: red"></i
+                ><br />
+                Inbox</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-clock-rotate-left" style="color: red"></i
+                ><br />
+                History</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-photo-film" style="color: red"></i
+                ><br />
+                Studio</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-creative-commons" style="color: red"></i>
+                Commons</a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-question" style="color: red"></i
+                > <br>
+                Help</a
+              >
+            </li>
           </ul>
-        </td>
+        </div>
+        <div class="col margin-barr-profile">
+          <div class="row">
+            <div class="d-flex mt-3 mb-3 ms-3">
+              <div >
+                <!-- <li class="me-4"> -->
+                  <a href="responsiveNavigation/simpleKanabas.html" class="disabled-li">
+                    <i class="fa-solid fa-bars " style="color: red"></i
+                  ></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
 
-        <td valign="top">
-          <ul>
-            <li><a href="#">Notifications</a></li>
-            <li><a href="index.html">Profile</a></li>
-            <li><a href="#">File</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">ePortfolios</a></li>
-            <li><a href="#">Shared Content</a></li>
-            <li><a href="#">The Hub</a></li>
-            <li><a href="#">Qwickly Course Tools</a></li>
-            <li><a href="#">Global Announcements</a></li>
-          </ul>
-        </td>
-
-        <td valign="top">
-          <br />
-          <h2>Deep Prajapati</h2>
-          <label>Name:*</label>
-          <input type="text" id="t1" placeholder="Doe" value="Deep Prajapati" />
-          <label>Pronouns:</label>
-          <select id="select-one-genre">
-            <option selected value="SpeedGrader">None</option>
-            <option value="optinon_1">Optinon 1</option>
-            <option value="optinon_2">Option 2</option>
-            <option value="optinon_3">Option 3</option>
-          </select>
-          <br /><br />
-
-          <label>Title:</label> <input type="text" id="t1" />
-
-          <h4>Contact</h4>
-          <p>
-            No registered services, you can add some on the
-            <a href="#" style="text-decoration: none">settings</a> page.
-          </p>
-
-          <h4>Contact</h4>
-          <p>
-            No registered services, you can add some on the
-            <a href="#" style="text-decoration: none">settings</a> page.
-          </p>
-
-          <h4>Biography</h4>
-          <p>Student, Computer Science, Machine Learning enthusiast.</p>
-
-          <h3>Links</h3>
-          <ul>
-            <li><a href="#" style="text-decoration: none">YouTube</a></li>
-          </ul>
-
-          <table border="0">
-            <tr>
-              <th>Title</th>
-              <th>URL</th>
-              <th></th>
-            </tr>
-            <tr>
-              <td><input type="text" id="t1" value="YouTube" /> &rarr;</td>
-              <td>
-                <input type="text" id="t1" value="https://www.youtube.com/" />
-              </td>
-              <td><a href="#">Remove</a></td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <button type="button">Add another link</button>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <button type="button"><a href="index.html">Cancel</a></button>
-                <button type="button">
-                  <a href="index.html">Save Profile</a>
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <button type="button">
-                  <a href="edit.html">Edit Profile</a>
-                </button>
-                <button type="button">
-                  <a href="index.html">Cancel Editing</a>
-                </button>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
+                  Deep Prajapati's Profile
+                <!-- </li> -->
+                <!-- <i class="fa-solid fa-bars fs-2" style="color: #0c0e0e"></i> -->
+              </div>
+              <!-- <div class="fs-4 ps-5">Deep Prajapati's Profile</div> -->
+            </div>
+            <hr class="ms-4 w-100" />
+          </div>
+          <div class="row">
+            <div
+              class="col-3 ps-25 d-none d-lg-block ps-0"
+              style="width: 200px"
+            >
+              <ul class="wd-course-navigation">
+                <li><a href="#" class="text-wrap">Notifications</a></li>
+                <li class="active">
+                  <a href="./index.html" class="text-wrap">Profile</a>
+                </li>
+                <li><a href="#" class="text-wrap">Files</a></li>
+                <li><a href="#" class="text-wrap">Setting Meetings</a></li>
+                <li><a href="#" class="text-wrap">ePortfolios</a></li>
+                <li><a href="#" class="text-wrap">Shared Content</a></li>
+                <li><a href="#" class="text-wrap">The Hub</a></li>
+                <li><a href="#" class="text-wrap">Qwickly Course Tools</a></li>
+                <li><a href="#" class="text-wrap">Global Announcements</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <form action="./index.html">
+                <div class="d-flex mb-1">
+                  <div>
+                    <div class="fa-stack fa-2x">
+                      <span class="fa-stack fa-2x">
+                        <img src="../../images/profile.jpg" alt="" class="round-dp">
+                      </span>
+                    </div>
+                    <br />
+                  </div>
+                  <div class="ms-auto">
+                    <button class="btn btn-secondary btn-light text-black border"  type="submit">
+                      <i
+                        class="fa fa-pencil"
+                        aria-hidden="true"
+                        style="transform: rotate(270deg)"
+                        ;
+                      ></i>
+                      Cancel Editing
+                    </button>
+                  </div>
+                </div>
+                <div class="mb-5 custom-detail-div">
+                  <label for="name" class="form-label"> Name:* </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    value="Deep prajapati"
+                    class="form-control w-50"
+                  />
+                </div>
+                <div class="mb-5 custom-detail-div">
+                  <label for="pronouns" class="form-label">Pronouns:</label
+                  >
+                  <select
+                    id="pronouns"
+                    class="form-select select-pronouns w-25"
+                  >
+                    <option selected value="None">None</option>
+                  </select>
+                </div>
+                <div class="mb-5 custom-detail-div">
+                  <label for="title" class="form-label"> Title: </label>
+                  <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    class="form-control w-50"
+                  />
+                </div>
+                <div class="mb-5 custom-detail-div">
+                  <label for="contact"><h3>Contact</h3></label>
+                  <br />
+                  No registered services, you can add some on the
+                  <a href="#" class="text-decoration-none text-danger"
+                    >settings</a
+                  >
+                  page.
+                </div>
+                <div class="mb-5 custom-detail-div">
+                  <label for="biography"><h3>Biography</h3></label>
+                  <textarea
+                    id="biography"
+                    class="form-control w-50"
+                    cols="30"
+                    rows="5"
+                  >Student, Computer Science, Machine Learning enthusiast.
+                        </textarea
+                  >
+                </div>
+                <div class="mb-2">
+                  <label for="links"><h3>Links</h3></label>
+                  <br />
+                  <div class="row">
+                    <div class="col form-label">Title</div>
+                    <div class="col form-label">URL</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <input type="text" class="form-control" value="Youtube" />
+                    </div>
+                    <div class="col-1 d-flex align-items-center justify-content-center ">
+                      <i class="fas fa-chevron-right" style="color: #838486;"></i>
+                    </div>
+                    <div class="col-5">
+                      <input
+                        type="text"
+                        class="form-control"
+                        value="https://www.youtube.com"
+                      />
+                    </div>
+                    
+                    <div class="col-1 d-flex align-items-center justify-content-left">
+                      <a href="#"
+                        ><i class="fa-solid fa-xmark" style="color: #c31818"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-4">
+                      <br>
+                      <button class="btn btn-secondary btn-light text-black border"  type="button">
+                        Add another link
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="mb-2" style="text-align: right">
+                  <button class="btn btn-secondary btn-light text-black border" type="submit">
+                    Cancel
+                  </button>
+                  <button class="btn btn-danger" type="submit">
+                    Save Profile
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+

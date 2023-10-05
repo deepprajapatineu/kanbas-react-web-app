@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  text-align: center;
+  padding: 7px;
+  font-size: 0.7em;
+  margin-top: 2px;
+  
+}
+
+.sidebar li.active {
+  background-color: white;
+}
+
+.sidebar li.active a {
+  color: red;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  margin-top: 2px;
+    padding: 2px;
+}
+
+.sidebar a i {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding-right: 5px;
+}
+.sidebar a i.account_icon {
+  color: #d2c2c2;
+  font-size: 18px;
+}
+
+ul.sidebar {
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  background-color: black;
+  justify-content: center;
+}
