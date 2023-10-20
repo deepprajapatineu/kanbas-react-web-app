@@ -1,0 +1,13 @@
+.content-div{
+    width: 94%;
+    margin-left: 90px;
+    /* background-color: aqua; */
+    overflow-x:hidden
+}
+
+@media screen and (max-width: 768px) {
+    .content-div{
+        width: 100%;
+        margin-left: 10px;
+    }
+  }

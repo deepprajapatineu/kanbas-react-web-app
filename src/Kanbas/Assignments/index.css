@@ -1,0 +1,89 @@
+.main-div {
+/* background-color: pink; */
+margin: 0;
+}
+
+.assignment-table .list-group-item {
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.assignment-table a {
+    text-decoration: none;
+    color: black;
+}
+
+.hr-grow {
+    width: 101%;
+    margin-left: -12px;
+}
+
+.wd-course-navigation-sm-size {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.wd-course-navigation-sm-size a {
+    text-decoration: none;
+    color: white;
+}
+
+.list-group {
+    border-radius: 0px;
+}
+
+.col-margin-left {
+    margin-left: -23px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+}
+
+.icon-black {
+    color: #050505;
+}
+
+.color-dark {
+    color: #434447;
+}
+
+.color-light {
+    color: #878885;
+}
+
+.custom-header .custom-pill{
+    /* background-color: pink; */
+    font-size:medium;
+    font-weight: 400;
+    margin: auto;
+    margin-top: 4px;
+}
+
+/* .pill-border{
+    border: 2px solid gray;
+} */
+
+.cutom-search{
+    margin-left: -23px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Your CSS rules for screens with a max width of 600px go here */
+    .main-div {
+        /* background-color: blue; */
+        margin: 0;
+        }
+    .cutom-search{
+        margin-left: 0;
+    }
+  }
