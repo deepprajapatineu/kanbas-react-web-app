@@ -6,7 +6,7 @@ function CourseList({ courses }) {
   return (
     <div className="d-flex flex-row flex-wrap ms-4">
       <div className="col-12 fs-4">
-        <span>Published Courses (24)</span>
+        <span>Published Courses (8)</span>
       </div>
       <hr className="w-100" />
       {courses.map((course) => (
