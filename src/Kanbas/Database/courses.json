@@ -1,28 +1,28 @@
 [
   {
     "_id": "RS101",
-    "name": "Rocket Propulsion",
+    "name": "Programming Design",
     "number": "RS4550",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15"
   },
   {
     "_id": "RS102",
-    "name": "Aerodynamics",
+    "name": "Web Design ",
     "number": "RS4560",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15"
   },
   {
     "_id": "RS103",
-    "name": "Spacecraft Design",
+    "name": "Programming with Data",
     "number": "RS4570",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15"
   },
   {
     "_id": "RS104",
-    "name": "Aerodynamics",
+    "name": "Algorithm",
     "number": "RS4580",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15"
@@ -36,21 +36,21 @@
   },
   {
     "_id": "RS106",
-    "name": "Aerodynamics",
+    "name": "Softwere Engineering",
     "number": "RS4600",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15"
   },
   {
     "_id": "RS107",
-    "name": "Spacecraft Design",
+    "name": "Python",
     "number": "RS4610",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15"
   },
   {
     "_id": "RS108",
-    "name": "PDP",
+    "name": "Java",
     "number": "CS5100",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15"

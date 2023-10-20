@@ -9,6 +9,7 @@ import {
   FaCaretRight,
   FaInfoCircle,
   FaUndo,
+  FaCreativeCommons,
 } from "react-icons/fa";
 import logo from "../../images/NeuLogo.png";
 import "./index.css";
@@ -34,7 +35,7 @@ function KanbasNavigation() {
     Inbox: <FaInbox className="wd-icon red-icon" />,
     History: <FaUndo className="wd-icon red-icon" />,
     Studio: <FaMicrophone className="wd-icon red-icon" />,
-    Commons: <FaCaretRight className="wd-icon red-icon" />,
+    Commons: <FaCreativeCommons className="wd-icon red-icon" />,
     Help: <FaInfoCircle className="wd-icon red-icon" />,
   };
   const { pathname } = useLocation();
