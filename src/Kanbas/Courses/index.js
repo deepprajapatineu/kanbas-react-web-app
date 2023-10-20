@@ -34,9 +34,9 @@ function Courses() {
   const { courseId } = useParams();
   const course = db.courses.find((course) => course._id === courseId);
   return (
-    <div className="row">
+    <div className="row ">
       <Breadcrumb courseName={course.name} />
-      <CourseNavigationMin courseName={course.name} />
+      <CourseNavigationMin courseName={course.name}/>
       <hr style={{ marginLeft: "15px", marginTop: "20px", width: "95%" }} />        
       <CourseNavigation />
       <div className="col " >

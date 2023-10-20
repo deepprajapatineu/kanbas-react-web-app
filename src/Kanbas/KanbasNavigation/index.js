@@ -6,7 +6,6 @@ import { BsFillCalendar2WeekFill } from "react-icons/bs";
 import {
   FaInbox,
   FaMicrophone,
-  FaCaretRight,
   FaInfoCircle,
   FaUndo,
   FaCreativeCommons,

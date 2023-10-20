@@ -15,7 +15,7 @@ function CourseCard({ course }) {
             {course.number} {course.name}
           </h6>
           <p className="card-text">
-            Start Date: {course.startDate} | End Date: {course.endDate}
+            Start Date: {course.startDate} <br/> End Date: {course.endDate}
           </p>
           <i className="fa-solid fa-file-pen" style={{ fontSize: "20px" }}></i>
         </Link>
