@@ -6,7 +6,6 @@ import "../index.css";
 
 function Breadcrumb({ courseName }) {
   const { courseId } = useParams();
-  //const history = useHistory();
 
   let arr = window.location.hash.split("/");
 

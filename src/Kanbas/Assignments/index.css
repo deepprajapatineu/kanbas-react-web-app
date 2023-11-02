@@ -3,9 +3,25 @@
 margin: 0;
 }
 
+.delete-button{
+    /* border: 2px solid pink; */
+    font-size: 12px;
+    margin: auto 0;
+}
+
+.title-buttons {
+ height: 40px;
+}
+
 .assignment-table .list-group-item {
     padding-top: 5px;
     padding-bottom: 0px;
+    justify-content: center;
+}
+
+.assignment-table .list-group-item button {
+    font-size: 12px;
+    margin: 0 auto;
 }
 
 .assignment-table a {
@@ -77,6 +93,8 @@ margin: 0;
     margin-left: -23px;
 }
 
+
+
 @media screen and (max-width: 768px) {
     /* Your CSS rules for screens with a max width of 600px go here */
     .main-div {
@@ -86,4 +104,11 @@ margin: 0;
     .cutom-search{
         margin-left: 0;
     }
+        /* .title-buttons  {
+            height: 30px;
+            width: 70px;
+            font-size: small;
+            background-color: aqua;
+        } */
+       
   }
