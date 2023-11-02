@@ -36,3 +36,13 @@
   text-decoration: none;
   color: white;
 }
+
+.decription{
+  height: 10px;
+}
+
+.form-div{
+  /* border: 1px solid black; */
+  justify-content: center;
+  align-items: center;
+}
