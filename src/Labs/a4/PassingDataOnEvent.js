@@ -6,7 +6,7 @@ function PassingDataOnEvent() {
       <div>
         <h2>Passing Data on Event</h2>
         <button onClick={() => add(2, 3)}
-                className="btn btn-primary">
+                className="btn btn-primary m-1">
           Pass 2 and 3 to add()
         </button>
       </div>
