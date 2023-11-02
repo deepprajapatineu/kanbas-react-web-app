@@ -2,25 +2,19 @@
   {
     "_id": "M101",
     "name": "LEARNING OBJECTIVES",
-    "description_1": "Introduction to the course",
-    "description_2": "Learning what is Web Development",
-    "description_3": "Creating a development environment",
+    "description": "Introduction to the course. Learning what is Web Development.",
     "course": "RS101"
   },
   {
     "_id": "M102",
     "name": "Reading",
-    "description_1": "Full Stack Developer - Chapter 1 - Introduction",
-    "description_2": "Full Stack Developer - Chapter 2 - Creating User",
-    "description_3": "Interfaces with HTML",
+    "description": "Full Stack Developer - Chapter 1 - Introduction",
     "course": "RS101"
   },
   {
     "_id": "M103",
     "name": "Slides",
-    "description_1": "Introduction to Web Development",
-    "description_2": "Creating an HTTP server with Node.js",
-    "description_3": "Creating a React Application",
+    "description": "Creating an HTTP server with Node.js",
     "course": "RS101"
   },
   {

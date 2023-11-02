@@ -99,34 +99,6 @@ function ModuleList() {
   const dispatch = useDispatch();
 
 
-  // const addModule = (module) => {
-  //   setModules([
-  //     { ...module, _id: new Date().getTime().toString() },
-  //       ...modules,
-  //   ]);
-  // };
-
-  // const deleteModule = (moduleId) => {
-  //   setModules(modules.filter(
-  //     (module) => module._id !== moduleId));
-  // };
-
-  // const updateModule = () => {
-  //   setModules(
-  //     modules.map((m) => {
-  //       if (m._id === module._id) {
-  //         return module;
-  //       } else {
-  //         return m;
-  //       }
-  //     })
-  //   );
-  // }
-
-
-
-
-
   return (
     <div className="row mt-5"
     style={{ marginRight: "10px" }}>
@@ -190,57 +162,42 @@ function ModuleList() {
         {modules
           .filter((module) => module.course === courseId)
           .map((module) => (
+            
+            <div className="update-div">
             <ListItem key={module._id} title={module.name}>
               <ul className="list-group">
-              <button
-              onClick={() => dispatch(setModule(module))}>
-
-              Edit
-              </button>
-
-              <button
-              onClick={() => dispatch(deleteModule(module._id))}>
-
-              Delete
-            </button>
-
-                {/* {Object.keys(module)
-                  .filter((key) => key.startsWith("description"))
-                  .map((descKey, index) => (
-                    <SubListItem
-                      key={index}
-                      content={module[descKey]}
-                      isLink={module.name === "Slides"}
-                    />
-                  ))} */}
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                  <div>
+                    {module.description}
+                  </div>
+                  <div className="d-flex">
+                    <div className="col-md-6">
+                      <button
+                        onClick={() => dispatch(setModule(module))}
+                        className="update-button btn btn-success w-120"
+                      >
+                        Edit
+                      </button>
+                    </div>
+                    <div className="col-md-6">
+                      <button
+                        onClick={() => dispatch(deleteModule(module._id))}
+                        className="update-button btn btn-danger w-120"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </ListItem>
+          </div>
+          
+
           ))}
       </ul>
       <br />
-      {/* <ListTitle title={"Week 1 - HTML"} />
-      <ul
-        className="list-group border-start border-3 border-success  "
-        style={{ marginBottom: "20px" }}
-      >
-        {modules
-          .filter((module) => module.course === courseId)
-          .map((module) => (
-            <ListItem key={module._id} title={module.name}>
-              <ul className="list-group">
-                {Object.keys(module)
-                  .filter((key) => key.startsWith("description"))
-                  .map((descKey, index) => (
-                    <SubListItem
-                      key={index}
-                      content={module[descKey]}
-                      isLink={module.name === "Slides"}
-                    />
-                  ))}
-              </ul>
-            </ListItem>
-          ))}
-      </ul> */}
+     
     </div>
   );
 }

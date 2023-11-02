@@ -2,6 +2,10 @@
   border-radius: 50%;
 }
 
+.update-button{
+/* width: 30%; */
+}
+
 .list-group-item-action a {
   color: red;
   text-decoration: none;
