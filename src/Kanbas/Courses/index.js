@@ -9,6 +9,8 @@ import AssignmentEditor from "../Assignments/AssignmentEditor";
 import Grades from "../Grades";
 import { FaBars, FaChevronDown } from "react-icons/fa";
 import AssignmentAdd from "../Assignments/AssignmentEditor/AssignmentAdd";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 const CourseNavigationMin = ({ courseName }) => {
   return (
@@ -30,9 +32,22 @@ const CourseNavigationMin = ({ courseName }) => {
   );
 };
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const URL = process.env.REACT_APP_BASE_URL+"/api/courses";
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
+
+  // const course = courses.find((course) => course._id === courseId);
   // console.log(course);
   return (
     <div className="row">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState } from "react";
 import {
   FaGripVertical,
   FaEllipsisV,
@@ -15,7 +15,10 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
+import { findModulesForCourse, createModule  } from "./client";
+import * as client from "./client";
 
 
 function ListTitle({ title }) {
@@ -93,7 +96,31 @@ function SubListItem({ content, isLink = false }) {
 }
 
 function ModuleList() {
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
+
   const { courseId } = useParams();
+    const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
@@ -134,7 +161,9 @@ function ModuleList() {
         </form>
 
         <button
-          onClick={() => dispatch(updateModule(module))}
+          // onClick={() => dispatch(updateModule(module))}
+          onClick={() => handleUpdateModule(module)}
+          handleUpdateModule
           className="btn btn-primary m-3"
           type="button"
           style={{ fontSize: "12px" }}
@@ -142,7 +171,8 @@ function ModuleList() {
           Update
         </button>
         <button
-          onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+          onClick={handleAddModule}
+          // onClick={() => dispatch(addModule({ ...module, course: courseId }))}
           className="btn btn-success m-3"
           type="button"
           style={{ fontSize: "12px" , display: "flex", alignItems: "center" }}
@@ -181,7 +211,8 @@ function ModuleList() {
                     </div>
                     <div className="col-md-6">
                       <button
-                        onClick={() => dispatch(deleteModule(module._id))}
+                        // onClick={() => dispatch(deleteModule(module._id))}
+                        onClick={() => handleDeleteModule(module._id)}
                         className="update-button btn btn-danger w-120"
                       >
                         Delete
