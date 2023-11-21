@@ -1,6 +1,9 @@
 import axios from "axios";
-const COURSES_URL = "${process.env.REACT_APP_BASE_URL}/api/courses";
-const MODULES_URL = "${process.env.REACT_APP_BASE_URL}/api/modules";
+// const COURSES_URL = "${process.env.REACT_APP_BASE_URL}/api/courses";
+// const MODULES_URL = "${process.env.REACT_APP_BASE_URL}/api/modules";
+const API_BASE = process.env.REACT_APP_API_BASE;
+const MODULES_URL = `${API_BASE}/modules`;
+const COURSES_URL = `${API_BASE}/courses`;
 export const deleteModule = async (moduleId) => {
   const response = await axios
     .delete(`${MODULES_URL}/${moduleId}`);
