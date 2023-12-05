@@ -1,3 +1,6 @@
+import UserTable from "../users/table";
+import Account from "../users/account";
+import Signin from "../users/signin";
 import Courses from "./Courses";
 import Dashboard from "./Dashboard";
 import KanbasNavigation from "./KanbasNavigation";
@@ -80,6 +83,7 @@ function Kanbas() {
       <div  className="content-div">
         <Routes>
           <Route path="/" element={<Navigate to="Dashboard" />} />
+          <Route path="/admin/users" element={<UserTable />} />
           <Route path="Account" element={<h1>Account</h1>} />
           <Route
             path="Dashboard"
@@ -98,6 +102,8 @@ function Kanbas() {
             path="Courses/:courseId/*"
             element={<Courses courses={courses} />}
           />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/account" element={<Account />} />
         </Routes>
       </div>
     </div>

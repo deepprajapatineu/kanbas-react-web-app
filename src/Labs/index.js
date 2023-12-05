@@ -6,6 +6,8 @@ import Assignment3 from "./a3";
 import Nav from "../Nav";
 import Assignment4 from "./a4";
 import Assignment5 from "./a5";
+// import Project from "../Project";
+// import Project from "./a6";
 
 function Labs() {
  return (
@@ -22,6 +24,8 @@ function Labs() {
         element={<Assignment4/>}/>
         <Route path="a5"
         element={<Assignment5/>}/>
+
+
      </Routes>
    </div>
    </Provider>
